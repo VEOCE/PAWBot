@@ -9,11 +9,19 @@ function displayBanner() {
     width: 150,
   });
 
-  ░█████╗░██╗░░░██╗████████╗░█████╗░
-  ██╔══██╗██║░░░██║╚══██╔══╝██╔══██╗
-  ███████║██║░░░██║░░░██║░░░██║░░██║
-  ██╔══██║██║░░░██║░░░██║░░░██║░░██║
-  ██║░░██║╚██████╔╝░░░██║░░░╚█████╔╝
-  ╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░░╚════╝░
-  
+  console.log(`${colors.bannerText}${banner}${colors.reset}`);
+  console.log(
+    `${colors.bannerBorder}===============================================${colors.reset}`
+  );
+  console.log(
+    `${colors.bannerLinks}${colors.reset}`
+  );
+  console.log(
+    `${colors.bannerLinks}${colors.reset}`
+  );
+  console.log(
+    `${colors.bannerBorder}===============================================\n${colors.reset}`
+  );
+}
+
 module.exports = displayBanner;
